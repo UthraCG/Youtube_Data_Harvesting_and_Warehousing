@@ -86,8 +86,8 @@ def VideoInfo(Video_Ids):
                                 Tags=i['etag'],
                                 PublishedAt=i['snippet']['publishedAt'],
                                 ViewCount=i['statistics']['viewCount'],
-                                CommentCount=i['snippet'].get('commentCount'),
-                                LikeCount=i['snippet'].get('likeCount'),
+                                CommentCount=i['statistics'].get('commentCount'),
+                                LikeCount=i['statistics'].get('likeCount'),
                                 FavouriteCount=i['statistics']['favoriteCount'],
                                 Duration=i['contentDetails']['duration'],
                                 Thumnails=i['snippet']['thumbnails']['default']['url']
